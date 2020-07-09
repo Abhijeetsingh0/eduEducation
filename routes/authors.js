@@ -3,7 +3,7 @@ const router = express.Router()
 const Author = require('../models/author')
 
 // All Authors Route
-router.get('/aaaa', async (req, res) => {
+router.get('/sirdb', async (req, res) => {
   let searchOptions = {}
   if (req.query.name != null && req.query.name !== '') {
     searchOptions.name = new RegExp(req.query.name, 'i')
@@ -18,7 +18,6 @@ router.get('/aaaa', async (req, res) => {
     res.redirect('/')
   }
 })
-
 // New Author Route
 router.get('/new', (req, res) => {
   res.render('authors/new', { author: new Author() })
@@ -37,9 +36,9 @@ router.post('/', async (req, res) => {
     // res.redirect(`authors/${newAuthor.id}`)
     res.redirect(`/`)
   } catch {
-    res.render('/authors/new', {
+    res.render('authors/new', {
       author: author,
-      errorMessage: 'Error creating Author'
+      errorMessage: 'please fill the form !!'
     })
   }
 })
