@@ -29,7 +29,7 @@ router.post('/', async (req, res) => {
   const author = new Author({
     name: req.body.name,
     email: req.body.email,
-    contact: req.body.email,
+    contact:req.body.contact,
     dis : req.body.dis
   })
   try {
