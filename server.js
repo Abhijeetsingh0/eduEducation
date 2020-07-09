@@ -25,5 +25,6 @@ if (process.env.NODE_ENV !== 'production') {
   
   app.use('/', indexRouter)
   app.use('/authors', authorRouter)
+  // app.use('/', authorRouter)
   
   app.listen(process.env.PORT || 3000)

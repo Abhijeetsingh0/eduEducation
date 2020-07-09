@@ -3,7 +3,7 @@ const router = express.Router()
 const Author = require('../models/author')
 
 // All Authors Route
-router.get('/', async (req, res) => {
+router.get('/aaaa', async (req, res) => {
   let searchOptions = {}
   if (req.query.name != null && req.query.name !== '') {
     searchOptions.name = new RegExp(req.query.name, 'i')
@@ -35,9 +35,9 @@ router.post('/', async (req, res) => {
   try {
     const newAuthor = await author.save()
     // res.redirect(`authors/${newAuthor.id}`)
-    res.redirect(`authors`)
+    res.redirect(`/`)
   } catch {
-    res.render('authors/new', {
+    res.render('/authors/new', {
       author: author,
       errorMessage: 'Error creating Author'
     })
