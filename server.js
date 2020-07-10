@@ -30,6 +30,6 @@ if (process.env.NODE_ENV !== 'production') {
   app.use('/authors', authorRouter)
   app.use('/about',aboutRouter)
   app.use('/gallery',galleryRoute)
-  //app.use('/course',courseRoute)
+  app.use('/course',courseRoute)
   
   app.listen(process.env.PORT || 3000)
