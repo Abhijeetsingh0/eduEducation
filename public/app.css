@@ -12,9 +12,11 @@ body{
 }
 
 #man3{
-    background: url('images/cover.jpeg');
+    background: url('images/cover.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
     background-position: center;
-    background-position: left;
+    color: rgb(166, 255, 213);
 }
 
 #tec{
@@ -25,11 +27,7 @@ body{
 }
 
 .adam{
-    color:#214c75;
-}
-
-#gal{
-    margin: auto;
+    color:#89c1f5;
 }
 
 #iit{
