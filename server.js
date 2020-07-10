@@ -10,6 +10,8 @@ if (process.env.NODE_ENV !== 'production') {
   const indexRouter = require('./routes/index')
   const authorRouter = require('./routes/authors')
   const aboutRouter = require('./routes/about')
+  const galleryRoute = require('./routes/gallery')
+  const courseRoute = require('./routes/course')
   
   app.set('view engine', 'ejs')
   app.set('views', __dirname + '/views')
@@ -27,7 +29,7 @@ if (process.env.NODE_ENV !== 'production') {
   app.use('/', indexRouter)
   app.use('/authors', authorRouter)
   app.use('/about',aboutRouter)
- 
-
+  app.use('/gallery',galleryRoute)
+  app.use('/course',courseRoute)
   
   app.listen(process.env.PORT || 3000)
