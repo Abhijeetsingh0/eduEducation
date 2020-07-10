@@ -9,6 +9,7 @@ if (process.env.NODE_ENV !== 'production') {
   
   const indexRouter = require('./routes/index')
   const authorRouter = require('./routes/authors')
+  const aboutRouter = require('./routes/about')
   
   app.set('view engine', 'ejs')
   app.set('views', __dirname + '/views')
@@ -25,6 +26,8 @@ if (process.env.NODE_ENV !== 'production') {
   
   app.use('/', indexRouter)
   app.use('/authors', authorRouter)
-  // app.use('/', authorRouter)
+  app.use('/about',aboutRouter)
+ 
+
   
   app.listen(process.env.PORT || 3000)
