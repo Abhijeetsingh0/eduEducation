@@ -60,7 +60,7 @@
 #attack{
   background: #111;
   background-position: center;
-  font: 5.0em/1 Open Sans, Impact;
+  font: 3.5em/1 Open Sans, Impact;
   text-transform: uppercase;
   margin: 0;
 }
@@ -134,5 +134,5 @@ body{
 
 
 #man9{
-    margin-top: 100px;
+    margin-top: 70px;
 }
