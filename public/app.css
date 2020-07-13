@@ -101,30 +101,30 @@ body{
 }
 
 .adam{
-    color:#89c1f5;
+    color:#b7d7f5;
 }
 
 #iit{
-    background: url('images/iit.jpg');
+    background: url('images/iit.jfif');
     background-position: center;
-    background-size:1500px;
+    background-size:100%;
     background-repeat: no-repeat;
-    color:#214c75 ;
+    color:#a1ffff ;
 }
 
 #neet{
-    background: url('images/neet.jpg');
+    background: url('images/neet.jfif');
     background-position: center;
-    background-size:1500px;
+    background-size:100%;
     background-repeat: no-repeat;
-    color :#e21717 ;
+    color :#baecfc ;
 }
 
-#sub{
-    background: url('images/sub.jpg');
-    background-position: center;
-    background-size:1200px;
-    background-repeat: no-repeat;
+.sub{
+    background: url('images/sub.jfif');
+    
+    background-size:100%;
+  
     color :whitesmoke ;
 }
 
@@ -135,4 +135,8 @@ body{
 
 #man9{
     margin-top: 70px;
+}
+
+#advan{
+  margin-top: 40px;
 }
